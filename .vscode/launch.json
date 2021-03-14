@@ -1,0 +1,30 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Mocha tests",
+      "program": "${workspaceRoot}/packages/shopping/node_modules/mocha/bin/_mocha",
+      "cwd": "${workspaceRoot}",
+      "args": [
+        "--config",
+        "${workspaceRoot}/packages/shopping/node_modules/@loopback/build/config/.mocharc.json",
+        "packages/*/dist/__tests__/**/*.js",
+        "-t",
+        "0"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Server",
+      "preLaunchTask": "Build Server",
+      "program": "${workspaceFolder}/packages/shopping/index.js",
+      "outFiles": ["${workspaceFolder}/packages/shopping/**/*.js"]
+    }
+  ]
+}

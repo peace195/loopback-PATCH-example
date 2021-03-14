@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+api-docs/
+**/*.d.ts
+packages/shopping/public/purify.js
+.env

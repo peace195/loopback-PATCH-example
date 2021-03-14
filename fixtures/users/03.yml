@@ -1,0 +1,6 @@
+email: jane@example.com
+firstName: Jane
+lastName: Doe
+password: jane12345678
+roles: ['customer']
+resetKey: ''
